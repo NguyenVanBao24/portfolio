@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import React from "react";
-import Magnetic from "./Magnetic";
+import Magnetic from "../Magnetic/Magnetic";
 
 export default function Spotlight() {
   return (

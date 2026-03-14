@@ -1,9 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Navigation from "@/components/Navigation";
-import CustomCursor from "@/components/CustomCursor";
-import Footer from "@/components/Footer";
+import "./about.css";
+import Navigation from "@/components/Navigation/Navigation";
+import CustomCursor from "@/components/CustomCursor/CustomCursor";
+import Footer from "@/components/Footer/Footer";
 
 const skills = [
   { name: "React / Next.js", level: 5, icon: "⚛", color: "#61DAFB", bg: "rgba(97,218,251,0.10)", desc: "Expert" },

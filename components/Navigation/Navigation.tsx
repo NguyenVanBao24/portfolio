@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import "./Navigation.css";
 import { motion } from "framer-motion";
 
 const navLinks = [

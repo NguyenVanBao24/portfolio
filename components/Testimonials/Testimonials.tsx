@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import "./Testimonials.css";
 
 const testimonials = [
   {

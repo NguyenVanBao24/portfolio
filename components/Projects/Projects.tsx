@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import "./Projects.css";
 
 interface Project {
   title: string;

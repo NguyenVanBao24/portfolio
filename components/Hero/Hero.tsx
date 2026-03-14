@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, type Variants, type Transition } from "framer-motion";
+import "./Hero.css";
 
 const EASE: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
 

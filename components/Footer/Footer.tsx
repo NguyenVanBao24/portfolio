@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import "./Footer.css";
 
 const socials = [
   { label: "GitHub",    href: "https://github.com" },

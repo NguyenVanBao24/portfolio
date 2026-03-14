@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import "./Experience.css";
 import { useMemo } from "react";
 
 const experiences = [

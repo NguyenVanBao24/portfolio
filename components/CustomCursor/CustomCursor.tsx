@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import "./CustomCursor.css";
 
 export default function CustomCursor() {
   const [pos, setPos] = useState({ x: -100, y: -100 });

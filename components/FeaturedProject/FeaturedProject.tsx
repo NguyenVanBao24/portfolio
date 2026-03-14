@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import "./FeaturedProject.css";
 import { useRef } from "react";
 
 const mockupStyle: React.CSSProperties = {
