@@ -225,7 +225,7 @@ export default function AboutPage() {
             <h2 className="cta-title">Let&apos;s build something great.</h2>
             <p className="cta-desc">Have a project in mind? I&apos;d love to hear about it.</p>
           </div>
-          <a href="mailto:your@email.com" className="cta-btn">
+          <a href="mailto:bao.nguyenk26@gmail.com" className="cta-btn">
             Get in Touch ↗
           </a>
         </motion.section>

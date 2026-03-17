@@ -58,8 +58,8 @@ export default function Footer() {
           transition={{ duration: 0.6, delay: 0.15 }}
           viewport={{ once: true }}
         >
-          <a href="mailto:your@email.com" className="footer-email">
-            your@email.com
+          <a href="mailto:bao.nguyenk26@gmail.com" className="footer-email">
+              bao.nguyenk26@gmail.com
           </a>
         </motion.div>
 

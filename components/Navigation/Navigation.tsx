@@ -52,7 +52,7 @@ export default function Navigation() {
         ))}
       </ul>
 
-      <a href="mailto:your@email.com" className="nav-cta">
+      <a href="mailto:bao.nguyenk26@gmail.com" className="nav-cta">
         Hire Me ↗
       </a>
     </motion.nav>

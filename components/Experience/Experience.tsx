@@ -6,27 +6,21 @@ import { useMemo } from "react";
 
 const experiences = [
   {
-    year: "2024 – Present",
-    role: "Senior Full-Stack Engineer",
-    company: "TechCorp Inc. · Remote",
+    year: "2025 – Present",
+    role: "Junior Frontend Engineer",
+    company: "Kamora · Da Nang City ",
     desc: "Leading development of microservices architecture serving 2M+ users. Built real-time features with WebSockets, reduced API latency by 40%.",
   },
   {
-    year: "2022 – 2024",
+    year: "2023 - 2025",
     role: "Full-Stack Developer",
-    company: "StartupXYZ · Ho Chi Minh City",
-    desc: "Built the entire product from scratch — React frontend, Node.js backend, PostgreSQL. Scaled from 0 to 50k monthly active users.",
-  },
-  {
-    year: "2021 – 2022",
-    role: "Frontend Developer",
-    company: "Agency ABC · Freelance",
+    company: "Baller Headwear · Da Nang City",
     desc: "Delivered 15+ web projects for clients across UK, US, and Australia. Specialized in performance optimization and animation-heavy interfaces.",
   },
   {
-    year: "2020 – 2021",
-    role: "Junior Developer",
-    company: "Digital Studio · Ho Chi Minh City",
+    year: "2022 - 2023",
+    role: "Intern Full-Stack Developer",
+    company: "Sapotar · Da Nang City",
     desc: "Started career building e-commerce sites and admin dashboards with React and WordPress.",
   },
 ];
