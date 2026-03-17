@@ -33,6 +33,13 @@
   transform-style: preserve-3d;
 }
 
+.project-card-inner {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
 .project-card:hover {
   border-color: var(--border-hover);
   box-shadow: 0 16px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(139, 92, 246, 0.08);

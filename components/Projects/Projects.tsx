@@ -23,6 +23,14 @@ const projects: Project[] = [
     link: "https://la-nghe-thuat.vercel.app/",
   },
   {
+    title: "FoodFinder — Smart Restaurant Discovery",
+    description: "Map-based food discovery platform that recommends nearby restaurants with a custom-built interactive map experience.",
+    tech: ["Next.js", "Map API", "Geolocation", "React"],
+    emoji: "🍜",
+    color: "#ef4444",
+    link: "https://food-finder-fe.vercel.app/",
+  },
+  {
     title: "UK's Largest Influencer Marketing Platform",
     description: "Full-stack SaaS connecting brands with verified influencers at scale.",
     tech: ["React", "Next.js", "MongoDB", "API"],
@@ -45,7 +53,7 @@ const projects: Project[] = [
     tech: ["React", "WebSockets", "Redis", "Node.js"],
     emoji: "⚡",
     color: "#059669",
-    link: "#",
+    link: "https://brain-board-list.vercel.app/",
   },
   {
     title: "E-Commerce Microservices Platform",
@@ -57,12 +65,9 @@ const projects: Project[] = [
   },
 ];
 
-function RotatingVisitBtn({ color }: { color: string }) {
+function RotatingVisitBtn({ color, href }: { color: string; href: string }) {
   const text = "Visit Now • Visit Now • Visit Now • ";
   const radius = 28;
-  const circumference = 2 * Math.PI * radius;
-  const chars = text.split("");
-  const total = chars.length;
 
   return (
     <div className="project-rotating-btn">
@@ -113,56 +118,63 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         e.currentTarget.style.transform = "";
       }}
     >
-      <div className="project-card-top">
-        <RotatingVisitBtn color={project.color} />
-        <div className="project-screenshots">
-          {/* Main screenshot placeholder */}
-          <div
-            className="project-screenshot-placeholder"
-            style={{ flex: "0 0 45%" }}
-          >
-            <span style={{ fontSize: "2.5rem" }}>{project.emoji}</span>
-          </div>
-          {/* Secondary screenshot */}
-          <div
-            className="project-screenshot-placeholder"
-            style={{
-              background: `linear-gradient(135deg, ${project.color}15 0%, #0d0d0d 100%)`,
-            }}
-          >
-            <div style={{ display: "flex", flexDirection: "column", gap: "6px", width: "80%" }}>
-              {[0.9, 0.6, 0.75, 0.5].map((w, i) => (
-                <div
-                  key={i}
-                  style={{
-                    height: "5px",
-                    width: `${w * 100}%`,
-                    borderRadius: "3px",
-                    background: `${project.color}60`,
-                  }}
-                />
-              ))}
+      <a
+        href={project.link}
+        target={project.link.startsWith("http") ? "_blank" : "_self"}
+        rel="noopener noreferrer"
+        className="project-card-inner"
+      >
+        <div className="project-card-top">
+          <RotatingVisitBtn color={project.color} href={project.link} />
+          <div className="project-screenshots">
+            {/* Main screenshot placeholder */}
+            <div
+              className="project-screenshot-placeholder"
+              style={{ flex: "0 0 45%" }}
+            >
+              <span style={{ fontSize: "2.5rem" }}>{project.emoji}</span>
+            </div>
+            {/* Secondary screenshot */}
+            <div
+              className="project-screenshot-placeholder"
+              style={{
+                background: `linear-gradient(135deg, ${project.color}15 0%, #0d0d0d 100%)`,
+              }}
+            >
+              <div style={{ display: "flex", flexDirection: "column", gap: "6px", width: "80%" }}>
+                {[0.9, 0.6, 0.75, 0.5].map((w, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      height: "5px",
+                      width: `${w * 100}%`,
+                      borderRadius: "3px",
+                      background: `${project.color}60`,
+                    }}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="project-card-body">
-        <h3 className="project-title">{project.title}</h3>
-        <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "1rem", lineHeight: 1.6 }}>
-          {project.description}
-        </p>
-        <div className="project-tech-row">
-          {project.tech.map((t) => (
-            <span key={t} className="tech-badge">{t}</span>
-          ))}
-          {project.more && (
-            <span className="tech-badge" style={{ color: "var(--accent-purple)" }}>
-              +{project.more} More
-            </span>
-          )}
+        <div className="project-card-body">
+          <h3 className="project-title">{project.title}</h3>
+          <p style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginBottom: "1rem", lineHeight: 1.6 }}>
+            {project.description}
+          </p>
+          <div className="project-tech-row">
+            {project.tech.map((t) => (
+              <span key={t} className="tech-badge">{t}</span>
+            ))}
+            {project.more && (
+              <span className="tech-badge" style={{ color: "var(--accent-purple)" }}>
+                +{project.more} More
+              </span>
+            )}
+          </div>
         </div>
-      </div>
+      </a>
     </motion.article>
   );
 }
